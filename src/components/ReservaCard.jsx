@@ -1,11 +1,12 @@
 
-
+// Componente para mostrar la información de una reserva en una tarjeta, con botones para editar, finalizar o eliminar la reserva según su estado
 const colorMap = {
   Confirmada: "bg-green-100 text-green-700",
   "En Espera": "bg-yellow-100 text-yellow-700",
   Finalizada: "bg-gray-100 text-gray-500",
 };
 
+// Componente para mostrar la información de una reserva en una tarjeta, con botones para editar, finalizar o eliminar la reserva según su estado
 export default function ReservaCard({ reservation, onEdit, onDelete, onFinalize }) {
   const { nombreCliente, fechaHora, cantidadPersonas, estado } = reservation;
 
