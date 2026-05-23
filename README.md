@@ -1,18 +1,95 @@
-# React + Vite
+# 🍽️ Table-Track — Gestor de Reservas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web SPA (Single Page Application) desarrollada para que los anfitriones de un restaurante puedan gestionar las reservas de mesas de manera eficiente. Permite crear, visualizar, editar, filtrar y eliminar reservas en tiempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Stack Tecnológico
 
-## React Compiler
+| Tecnología | Uso |
+|---|---|
+| React.js + Vite | Framework principal y bundler |
+| React Router DOM | Enrutamiento y protección de rutas |
+| Tailwind CSS | Estilos y diseño responsive |
+| Axios | Peticiones HTTP a la API |
+| SweetAlert2 | Alertas y confirmaciones |
+| MockAPI | API RESTful simulada |
+| LocalStorage | Persistencia de sesión |
+| Git + GitHub | Control de versiones |
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🌐 API
 
-## Expanding the ESLint configuration
+La aplicación consume una API RESTful simulada en MockAPI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Base URL:*https://6a11e64a3e35d0f37ee3d04a.mockapi.io/reservas/Reservaciones*
+
+**Endpoints disponibles:**
+
+| Método | Endpoint | Descripción |
+|---|---|---|
+| GET | /Reservaciones | Obtener todas las reservas |
+| POST | /Reservaciones | Crear una nueva reserva |
+| PUT | /Reservaciones/:id | Actualizar una reserva |
+| DELETE | /Reservaciones/:id | Eliminar una reserva |
+
+---
+
+## 💻 Instalación y ejecución local
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/table-track.git
+```
+
+### 2. Entrar a la carpeta del proyecto
+
+```bash
+cd table-track
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Ejecutar el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+### 5. Abrir en el navegador
+
+
+---
+
+## 📁 Estructura del proyecto
+
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── ReservaCard.jsx
+│   ├── ReservaForm.jsx
+│   ├── FiltroBar.jsx
+│   └── Spinner.jsx
+├── pages/
+│   ├── Login.jsx
+│   └── Panel.jsx
+├── services/
+│   └── Reservaciones.js
+├── utils/
+│   └── Autenticacion.js
+├── App.jsx
+└── main.jsx
+
+---
+
+## 👤 Autor
+
+Desarrollado por **Aurelio Marcel Velásquez Aponte**  
+Prueba técnica — Desarrollador Frontend Junior  
+Mayo 2026
