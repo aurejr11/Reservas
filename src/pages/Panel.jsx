@@ -105,7 +105,6 @@ export default function Panel() {
 
         <FiltroBar active={filter} onChange={setFilter} />
 
-        // Muestra el formulario de reserva si showForm es true, pasando los datos de la reserva a editar si editing no es null, y una función para manejar el submit del formulario
         {showForm && (
           <div className="bg-white rounded-xl shadow p-6">
             <h3 className="font-bold text-lg text-gray-800 mb-4">

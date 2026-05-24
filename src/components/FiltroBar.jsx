@@ -1,7 +1,8 @@
 
-
+// Componente de barra de filtros para mostrar las reservas según su estado, con botones para cada estado y un botón para mostrar todas las reservas
 const ESTADOS = ["Todos", "Confirmada", "En Espera", "Finalizada"];
 
+// Componente de barra de filtros para mostrar las reservas según su estado, con botones para cada estado y un botón para mostrar todas las reservas
 export default function FiltroBar({ active, onChange }) {
   return (
     <div className="flex gap-2 flex-wrap">

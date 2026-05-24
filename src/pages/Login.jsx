@@ -9,12 +9,12 @@ export default function Login() {
   const [turno, setTurno] = useState("Mañana");
   const navigate = useNavigate();
 
-// Si ya hay una sesión activa, redirige al panel
+  // Si ya hay una sesión activa, redirige al panel
   useEffect(() => {
     if (getSession()) navigate("/panel");
   }, []);
 
-// Maneja el submit del formulario, valida que el nombre no esté vacío y guarda la sesión
+  // Maneja el submit del formulario, valida que el nombre no esté vacío y guarda la sesión
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!nombre.trim()) return;
@@ -22,9 +22,17 @@ export default function Login() {
     navigate("/panel");
   };
 
-// Formulario de login con campos para nombre y turno, y un botón para ingresar al panel
+  // Formulario de login con campos para nombre y turno, y un botón para ingresar al panel
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+    <div
+      className="min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <form
         onSubmit={handleSubmit}
         className="bg-white rounded-2xl shadow-xl p-10 w-full max-w-md flex flex-col gap-5"
@@ -65,7 +73,7 @@ export default function Login() {
 
         <button
           type="submit"
-          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg py-2 transition"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg py-2 transition"
         >
           Ingresar
         </button>
